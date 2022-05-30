@@ -13,10 +13,21 @@ public class Enemy : MonoBehaviour
     public delegate void GameEndDelegate();
     public event GameEndDelegate GameOverEvent = delegate { };
 
+    //public Node TargetNode { get; private set; }
+   // public Node CurrentNode { get; private set; }
+
     // Start is called before the first frame update
     void Start()
     {
-        InitializeAgent();
+       /// InitializeAgent();
+       // foreach (Node node in GameManager.Instance.Nodes)
+      //  {
+           // if (node.Parents.Length > 2 && node.Children.Length == 0)
+            {
+           //     CurrentNode = node;
+            //    break;
+            }
+       /// }
     }
 
     // Update is called once per frame
@@ -33,14 +44,21 @@ public class Enemy : MonoBehaviour
                 }
                 //Implement path finding here
                 else 
-                { 
+                {
                     //find new target node
-                    //if target node is not the AIs current node is not null
-                        //set current node to traget node
-                    //else if player traget not null and player traget node not current node
-                        //set current node to players target node
 
-                    //if current node is not null
+                    //if target node is not the AIs current node is not null
+                    //if (Player != currentNode)
+                    //{
+                        
+                    //}
+;
+                        //set current node to traget node
+                        //else if player traget not null and player traget node not current node
+                        
+                    //set current node to players target node
+
+                        //if current node is not null
                         //set current direction towards node
                         //normalize current direction
                 }
