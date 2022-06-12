@@ -52,7 +52,7 @@ public class Enemy : MonoBehaviour
                     //{
                         
                     //}
-;
+
                         //set current node to traget node
                         //else if player traget not null and player traget node not current node
                         
