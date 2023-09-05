@@ -15,6 +15,8 @@ public class GameManager : MonoBehaviour
 
     public static GameManager Instance { get; private set; }
 
+    //pubilc static GameManager Instance { get; private set; }
+
     /// <summary>
     /// Awake is called before Start is executed for the first time.
     /// </summary>

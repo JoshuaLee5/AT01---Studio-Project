@@ -25,6 +25,7 @@ public class Player : MonoBehaviour
             if(node.Parents.Length > 2 && node.Children.Length == 0)
             {
                 CurrentNode = node;
+                TargetNode = node;
                 break;
             }
         }
@@ -73,9 +74,15 @@ public class Player : MonoBehaviour
                 CurrentNode = TargetNode;
             }
         }
+
     }
 
+    //(This method should get invoked by a matching event)
     //Implement mouse interaction method here
+    //create method which takes in a direction (vector3)
+    //sends out raycast in that direction
+    //checks for a node if the raycast hits something
+    //calls MovetoNode and passes it the node the raycast hit
     public void MouseInput(string s)
     {
         if (moving == false)
